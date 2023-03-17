@@ -17,14 +17,16 @@ function pararContagem() {
 // ---------CONTAGEM REGRESSIVA ----------
 function ativarContagem(){
     tempo = setInterval(function(){
-         var cronometro = document.getElementById('tempo').innerHTML;
+         var cronometro = document.getElementById('tempo').value;
          var soma = parseInt(cronometro) - 1;
          if (soma === 0){
-            document.getElementById('tempo').innerHTML = "tempo esgotado";     
+            document.getElementById('tempo').value = "tempo esgotado";  
+             
         pararContagem()
-         }else {
+         
+         } else {
 
-         document.getElementById('tempo').innerHTML = soma;
+         document.getElementById('tempo').value = soma;
          }
         }, 1000);
      }
@@ -33,3 +35,8 @@ function ativarContagem(){
      clearInterval(tempo);
      //document.getElementById('tempo').innerHTML = " parou a contagem";
      }
+
+     function limpar() {
+        document.getElementById("tempo").value = "";
+        clearInterval(tempo);
+    }

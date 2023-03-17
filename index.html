@@ -4,17 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .stop {background: tomato;}
-        .start {background: green;}
-    </style>
+    <title>Contador regressivo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Controle de Tempo</h1>
-    <h2 id="tempo">10</h2>
+    <!-- Div principal-->
+    <div class="d-flex justify-content-center">
+        <div class="content fundo">
+        
+    <h1 class="d-flex justify-content-center">CONTADOR REGRESSIVO</h1><br>
+    <p class="d-flex justify-content-center">Um cronômetro digital e virtual a sua disposição</p><br>
+    <div class="d-flex justify-content-center">
+        <h2><input id="tempo" class="d-flex justify-content-center" placeholder="Digite a quantidade de Segundos"></input></h2>
+    </div>  
+    
+    <div class="d-flex justify-content-center">
     <button onclick="ativarContagem()" class="start">Ativar Contagem</button>
     <button onclick="pararContagem()" class="stop">Parar Contagm</button>
+    <button onclick="limpar()" class="reset">Resetar</button>
+</div>
+</div>
     <script src="main.js"></script>
 </body>
 </html>
