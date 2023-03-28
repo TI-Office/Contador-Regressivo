@@ -21,7 +21,13 @@ function pararContagem() {
 function ativarContagem() {
     tempo = setInterval(function () {
         var cronometro = document.getElementById('tempo').value;
-        var soma = parseInt(cronometro) - 1;
+     if (isNaN(cronometro)) {
+            document.getElementById('tempo').value = "Digite um número por favor";
+            pararContagem();
+            return;
+        }
+   
+var soma = parseInt(cronometro) - 1;
 
        
         if (soma <= 0) {
