@@ -26,6 +26,11 @@ function ativarContagem() {
             pararContagem();
             return;
         }
+If (cronômetro === ''){
+document.getElementById('tempo').value = "Digite um número por favor";
+            pararContagem();
+            return;
+        }
    
 var soma = parseInt(cronometro) - 1;
 
