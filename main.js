@@ -30,10 +30,10 @@ If (cronômetro === ''){
 document.getElementById('tempo').value = "Digite um número por favor";
             pararContagem();
             return;
-        } Else {
+        
    
 var soma = parseInt(cronometro) - 1;
-}
+
        
         if (soma <= 0) {
             document.getElementById('tempo').value = "tempo esgotado";
