@@ -29,7 +29,7 @@ function ativarContagem() {
 If (cronômetro === ''){
 document.getElementById('tempo').value = "Digite um número por favor";
             pararContagem();
-            return;
+            return;}
         
    
 var soma = parseInt(cronometro) - 1;
