@@ -2,7 +2,7 @@ function ativarContagem() {
     tempo = setInterval(function () {
         var cronometro = document.getElementById('tempo').value;
      if (isNaN(cronometro)) {
-            document.getElementById('tempo').value = "Digite um número por favor";
+            document.getElementById('tempo').value = "DIGITE APENAS NÚMERO";
             pararContagem();
             return;
         } 
@@ -12,7 +12,7 @@ var soma = parseInt(cronometro) - 1;
 
        
         if (soma <= 0) {
-            document.getElementById('tempo').value = "tempo esgotado";
+            document.getElementById('tempo').value = "TEMPO ESGOTADO";
             pararContagem()
 
         } else {

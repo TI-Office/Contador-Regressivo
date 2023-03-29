@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contador regressivo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contador regressivo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- Div principal-->
-    <div class="d-flex justify-content-center">
-        <div class="content fundo">
-        
-    <h1 class="d-flex justify-content-center">CONTADOR REGRESSIVO</h1><br>
-    <p class="d-flex justify-content-center">Um cronômetro digital e virtual a sua disposição</p><br>
-    <div class="d-flex justify-content-center">
-       <h2><input id="tempo" class="d-flex justify-content-center" placeholder="Digite a quantidade de Segundos"></input></h2>
-       <!-- 
+  <!-- Div principal-->
+  <div class="d-flex justify-content-center">
+    <div class="content fundo">
+
+      <h1 class="d-flex justify-content-center">CONTADOR REGRESSIVO</h1><br>
+      <p class="d-flex justify-content-center">Um cronômetro digital e virtual a sua disposição</p><br>
+      <div class="d-flex justify-content-center">
+        <h2><input id="tempo" class="d-flex justify-content-center"
+            placeholder="DIGITE A QUANTIDADE DE SEGUNDOS"></input></h2>
+        <!-- 
        <div class="input-group mb-3">
         <label class="input-group-text" for="inputGroupSelect01">Options</label>
         <select class="form-select" id="tempo">
@@ -28,15 +32,20 @@
         </select>
       </div>
     -->
-    </div>  
-    
-    
-    <div class="d-flex justify-content-center">
+      </div>
+      <div class="grid text-center">
+        <div class="g-col-4"><button onclick="ativarContagem()" class="start">Ativar Contagem</button></div><br>
+        <div class="g-col-4"><button onclick="pararContagem()" class="stop">Parar Contagm</button></div><br>
+        <div class="g-col-4"><button onclick="limpar()" class="reset">Resetar</button></div>
+      </div>
+
+      <!--<div class="d-flex justify-content-center">
     <button onclick="ativarContagem()" class="start">Ativar Contagem</button>
     <button onclick="pararContagem()" class="stop">Parar Contagm</button>
-    <button onclick="limpar()" class="reset">Resetar</button>
-</div>
-</div>
-    <script src="main.js"></script>
+    <button onclick="limpar()" class="reset">Resetar</button>-->
+    </div>
+  </div>
+  <script src="main.js"></script>
 </body>
+
 </html>
